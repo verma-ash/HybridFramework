@@ -11,7 +11,6 @@ public class SearchResultOutput extends PageBase {
 	/**
 	 * Constructor overloaded with web driver.
 	 * 
-	 * @param driver
 	 */
 	public SearchResultOutput() {
 		PageFactory.initElements(driver, this);
@@ -22,12 +21,22 @@ public class SearchResultOutput extends PageBase {
 	 */
 	@FindBy(xpath = "(//a[contains(@class,'a-link-normal a-text-normal') and @target='_blank'])[1]")
 	WebElement firstResultElement;
+	@FindBy(id = "nav-cart-count")
+	WebElement itemsInCart;
 
 	/**
 	 * this method will click on the first element on result page.
 	 */
 	public void clickOnFirstResult() {
 		firstResultElement.click();
+	}
+
+	/**
+	 * this method return the number of items present in cart
+	 * @return
+	 */
+	public Integer getItemsFromCart() {
+		return Integer.parseInt(itemsInCart.getText());
 	}
 
 }

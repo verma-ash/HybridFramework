@@ -11,7 +11,6 @@ public class AmazonHome extends PageBase {
 	/**
 	 * Constructor method for this class, this is overloaded.
 	 * 
-	 * @param driver
 	 */
 	public AmazonHome() {
 		PageFactory.initElements(driver, this);
@@ -34,7 +33,11 @@ public class AmazonHome extends PageBase {
 		searchBox.sendKeys(itemName);
 		searchButton.click();
 	}
-
+	
+	/**
+	 * this method will click on the search button and open new page of SearchResultOutput
+	 * @return
+	 */
 	public SearchResultOutput clickOnSearch() {
 		searchButton.click();
 		return new SearchResultOutput();

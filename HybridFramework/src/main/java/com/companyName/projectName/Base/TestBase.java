@@ -37,7 +37,6 @@ public class TestBase {
 	/**
 	 * This method will quit the browser for test
 	 * 
-	 * @param driver
 	 */
 	@AfterClass
 	public void quitTestBrowser() {

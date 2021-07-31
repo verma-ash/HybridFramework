@@ -15,6 +15,11 @@ public class PageBase {
 	
 	protected static WebDriver driver;
 
+	/**
+	 * This method will take input from properties files and initialize our driver
+	 * @param prop
+	 * @return
+	 */
 	public static WebDriver initialize(Properties prop) {
 		String browserName = prop.getProperty("browser");
 		String testUrl = prop.getProperty("url");
@@ -43,6 +48,9 @@ public class PageBase {
 		return driver;
 	}
 
+	/**
+	 * this method will close all the opened tabs opened by browser.
+	 */
 	public static void quitBrowser() {
 		driver.quit();
 	}

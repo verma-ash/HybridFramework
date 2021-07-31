@@ -1,5 +1,6 @@
 package com.companyName.projectName.TestCases;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import com.companyName.projectName.Base.TestBase;
@@ -12,7 +13,7 @@ import com.companyName.projectName.Pages.SearchResultOutput;
  * @author Ashish
  *
  */
-public class SearchItemOnAmazon extends TestBase {
+public class SearchItemOnAmazonTest extends TestBase {
 
 	/**
 	 * This method will perform the search operation test and click on the first
@@ -21,11 +22,12 @@ public class SearchItemOnAmazon extends TestBase {
 	 * @throws InterruptedException
 	 */
 	@Test
-	public void searchItem() throws InterruptedException {
+	public void searchItemTest() throws InterruptedException {
 		AmazonHome amazonHome = new AmazonHome();
 		amazonHome.searchItem("fire tv stick 2021");
 		SearchResultOutput searchResultOutput = amazonHome.clickOnSearch();
 		searchResultOutput.clickOnFirstResult();
+		Assert.assertEquals(0, (int)searchResultOutput.getItemsFromCart()); 
 
 	}
 
