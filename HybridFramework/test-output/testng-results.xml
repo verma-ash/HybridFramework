@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10897" started-at="2021-08-01T01:22:57 IST" finished-at="2021-08-01T01:23:08 IST">
+  <suite name="Default suite" duration-ms="15287" started-at="2021-08-01T01:45:47 IST" finished-at="2021-08-01T01:46:02 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10897" started-at="2021-08-01T01:22:57 IST" finished-at="2021-08-01T01:23:08 IST">
+    <test name="Default test" duration-ms="15287" started-at="2021-08-01T01:45:47 IST" finished-at="2021-08-01T01:46:02 IST">
       <class name="com.companyName.projectName.TestCases.SearchItemOnAmazon">
-        <test-method status="PASS" signature="openTestBrowser()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazon@15bfd87]" name="openTestBrowser" is-config="true" duration-ms="5940" started-at="2021-08-01T01:22:57 IST" finished-at="2021-08-01T01:23:03 IST">
+        <test-method status="PASS" signature="openTestBrowser()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazon@15bfd87]" name="openTestBrowser" is-config="true" duration-ms="7338" started-at="2021-08-01T01:45:47 IST" finished-at="2021-08-01T01:45:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openTestBrowser -->
-        <test-method status="PASS" signature="searchItem()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazon@15bfd87]" name="searchItem" duration-ms="4140" started-at="2021-08-01T01:23:03 IST" finished-at="2021-08-01T01:23:07 IST">
+        <test-method status="PASS" signature="searchItem()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazon@15bfd87]" name="searchItem" duration-ms="7136" started-at="2021-08-01T01:45:54 IST" finished-at="2021-08-01T01:46:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItem -->
-        <test-method status="PASS" signature="quitTestBrowser()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazon@15bfd87]" name="quitTestBrowser" is-config="true" duration-ms="765" started-at="2021-08-01T01:23:07 IST" finished-at="2021-08-01T01:23:08 IST">
+        <test-method status="PASS" signature="quitTestBrowser()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazon@15bfd87]" name="quitTestBrowser" is-config="true" duration-ms="760" started-at="2021-08-01T01:46:01 IST" finished-at="2021-08-01T01:46:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitTestBrowser -->
