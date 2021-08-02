@@ -28,6 +28,11 @@ public class SearchItemOnAmazonTest extends TestBase {
 		openTestBrowser();
 	}
 	
+	/**
+	 * this is data provider method of testNG and it is calling Utility class getDataFromExcel method
+	 * @return
+	 * @throws IOException
+	 */
 	@DataProvider
 	public Object[][] getProucts() throws IOException{
 		Object objData[][] = Utility.getDataFromExcel(sheetName);
