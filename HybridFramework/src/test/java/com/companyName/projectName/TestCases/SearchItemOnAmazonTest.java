@@ -29,7 +29,7 @@ public class SearchItemOnAmazonTest extends TestBase {
 	}
 	
 	/**
-	 * this is data provider method of testNG and it is calling Utility class getDataFromExcel method
+	 * this is data provider method of testNG and it is calling Utility class getDataFromExcel method.
 	 * @return
 	 * @throws IOException
 	 */
