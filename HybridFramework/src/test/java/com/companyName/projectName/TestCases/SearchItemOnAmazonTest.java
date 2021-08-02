@@ -45,7 +45,7 @@ public class SearchItemOnAmazonTest extends TestBase {
 	 * 
 	 * @throws InterruptedException
 	 */
-	@Test(dataProvider = "getProucts")
+	@Test(priority = 1, dataProvider = "getProucts")
 	public void searchItemTest(String productName) throws InterruptedException {
 		AmazonHome amazonHome = new AmazonHome();
 		amazonHome.searchItem(productName);
