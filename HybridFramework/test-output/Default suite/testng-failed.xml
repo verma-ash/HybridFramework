@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.companyName.projectName.TestCases.SearchItemOnAmazon">
+      <class name="com.companyName.projectName.TestCases.SearchItemOnAmazonTest">
         <methods>
-          <include name="quitTestBrowser"/>
-          <include name="searchItem"/>
-          <include name="openTestBrowser"/>
+          <include name="searchItemTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.companyName.projectName.TestCases.SearchItemOnAmazon -->
+      </class> <!-- com.companyName.projectName.TestCases.SearchItemOnAmazonTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

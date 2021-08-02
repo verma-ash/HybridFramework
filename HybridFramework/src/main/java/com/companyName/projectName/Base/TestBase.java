@@ -5,12 +5,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 
 public class TestBase {
 
-	protected Properties prop;
+	protected static Properties prop;
 
 	public TestBase() {
 		String userDir = System.getProperty("user.dir");
@@ -29,7 +27,6 @@ public class TestBase {
 	/**
 	 * This method will initialize the driver with required browser type.
 	 */
-	@BeforeClass
 	public void openTestBrowser() {
 		PageBase.initialize(prop);
 	}
@@ -38,7 +35,6 @@ public class TestBase {
 	 * This method will quit the browser for test
 	 * 
 	 */
-	@AfterClass
 	public void quitTestBrowser() {
 		PageBase.quitBrowser();
 	}

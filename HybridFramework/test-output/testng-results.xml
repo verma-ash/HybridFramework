@@ -1,25 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15287" started-at="2021-08-01T01:45:47 IST" finished-at="2021-08-01T01:46:02 IST">
+  <suite name="Default suite" duration-ms="33904" started-at="2021-08-03T01:46:11 IST" finished-at="2021-08-03T01:46:45 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15287" started-at="2021-08-01T01:45:47 IST" finished-at="2021-08-01T01:46:02 IST">
-      <class name="com.companyName.projectName.TestCases.SearchItemOnAmazon">
-        <test-method status="PASS" signature="openTestBrowser()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazon@15bfd87]" name="openTestBrowser" is-config="true" duration-ms="7338" started-at="2021-08-01T01:45:47 IST" finished-at="2021-08-01T01:45:54 IST">
+    <test name="Default test" duration-ms="33904" started-at="2021-08-03T01:46:11 IST" finished-at="2021-08-03T01:46:45 IST">
+      <class name="com.companyName.projectName.TestCases.SearchItemOnAmazonTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="setUp" is-config="true" duration-ms="5403" started-at="2021-08-03T01:46:11 IST" finished-at="2021-08-03T01:46:17 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openTestBrowser -->
-        <test-method status="PASS" signature="searchItem()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazon@15bfd87]" name="searchItem" duration-ms="7136" started-at="2021-08-01T01:45:54 IST" finished-at="2021-08-01T01:46:01 IST">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchItemTest(java.lang.String)[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="searchItemTest" duration-ms="10247" started-at="2021-08-03T01:46:17 IST" data-provider="getProucts" finished-at="2021-08-03T01:46:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fire tv stick 2021]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchItem -->
-        <test-method status="PASS" signature="quitTestBrowser()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazon@15bfd87]" name="quitTestBrowser" is-config="true" duration-ms="760" started-at="2021-08-01T01:46:01 IST" finished-at="2021-08-01T01:46:02 IST">
+        </test-method> <!-- searchItemTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="tearDown" is-config="true" duration-ms="1133" started-at="2021-08-03T01:46:27 IST" finished-at="2021-08-03T01:46:28 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitTestBrowser -->
-      </class> <!-- com.companyName.projectName.TestCases.SearchItemOnAmazon -->
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="setUp" is-config="true" duration-ms="4255" started-at="2021-08-03T01:46:28 IST" finished-at="2021-08-03T01:46:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchItemTest(java.lang.String)[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="searchItemTest" duration-ms="11189" started-at="2021-08-03T01:46:32 IST" data-provider="getProucts" finished-at="2021-08-03T01:46:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ajanta wall clock]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItemTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="tearDown" is-config="true" duration-ms="1022" started-at="2021-08-03T01:46:44 IST" finished-at="2021-08-03T01:46:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.companyName.projectName.TestCases.SearchItemOnAmazonTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
