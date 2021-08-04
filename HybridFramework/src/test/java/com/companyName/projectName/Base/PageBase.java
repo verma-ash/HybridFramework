@@ -12,11 +12,16 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PageBase {
-	
+
 	protected static WebDriver driver;
+
+	public static WebDriver getDriver() {
+		return driver;
+	}
 
 	/**
 	 * This method will take input from properties files and initialize our driver
+	 * 
 	 * @param prop
 	 * @return
 	 */
