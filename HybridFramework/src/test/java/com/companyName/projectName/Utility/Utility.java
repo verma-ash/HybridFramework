@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -79,15 +82,24 @@ public class Utility extends TestBase {
 		return dataObj;
 	}
 
-	public static void captureScreenshotOfFullPage(String screenshotName) {
+	public static String captureScreenshotOfFullPage(String screenshotName) {
 
 		File src = ((TakesScreenshot) PageBase.getDriver()).getScreenshotAs(OutputType.FILE);
+		String screenshotDestication = System.getProperty("user.dir") + "/Screenshots/" + screenshotName + "__"
+				+ getCurrentDataTime() + prop.getProperty("screenshotFormat");
 		try {
-			FileUtils.copyFile(src, new File("./Screenshots/" + screenshotName + prop.getProperty("screenshotFormat")));
+			FileUtils.copyFile(src, new File(screenshotDestication));
 		} catch (Exception e) {
-			System.out.println("Unable to take screenshot of " + screenshotName + "----" + e.getMessage());
+			System.out.println("Unable to take screenshot of " + screenshotDestication + "----" + e.getMessage());
 		}
+		return screenshotDestication;
 
+	}
+
+	public static String getCurrentDataTime() {
+		DateFormat projectFormat = new SimpleDateFormat(prop.getProperty("dateFormat"));
+		Date currentDate = new Date();
+		return projectFormat.format(currentDate);
 	}
 
 }

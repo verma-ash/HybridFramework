@@ -12,6 +12,7 @@ import com.companyName.projectName.Utility.Utility;
 
 /**
  * This is Test class used for search given item on amazon.in
+ * Every test case should create a test case for Extent reports and do the logging then and there only.
  * 
  * @author Ashish
  *
@@ -34,8 +35,13 @@ public class SearchItemOnAmazonTest extends TestBase {
 	 * @throws IOException
 	 */
 	@DataProvider
-	public Object[][] getProucts() throws IOException{
-		Object objData[][] = Utility.getDataFromExcel(sheetName);
+	public Object[][] getProucts(){
+		Object objData[][] = null;
+		try {
+			objData = Utility.getDataFromExcel(sheetName);
+		} catch (IOException e) {
+			System.out.println("Excel sheet not loaded ---"+e.getMessage());
+		}
 		return objData;
 	}
 
@@ -47,17 +53,29 @@ public class SearchItemOnAmazonTest extends TestBase {
 	 */
 	@Test(priority = 1, dataProvider = "getProucts")
 	public void searchItemTest(String productName) throws InterruptedException {
+		
+		testLogger = reports.createTest("search Item Test");
+		
 		AmazonHome amazonHome = new AmazonHome();
+		testLogger.info("Open the Amazon website");
+		
 		amazonHome.searchItem(productName);
+		testLogger.info("Search Item in search input box");
+		
 		SearchResultOutput searchResultOutput = amazonHome.clickOnSearch();
+		testLogger.info("Click on search button");
+	
 		searchResultOutput.clickOnFirstResult();
-		Assert.assertEquals(0, (int)searchResultOutput.getItemsFromCart()); 
+		testLogger.info("Click on fisrt result");
+
+		Assert.assertEquals(0, (int)searchResultOutput.getItemsFromCart());
+		
 	}
 	
 	/**
 	 * this is a after method to quit the browser for test.
 	 */
-	@AfterMethod
+	@AfterMethod(dependsOnMethods = {"afterMethod"})
 	public void tearDown() {
 		quitTestBrowser();
 	}

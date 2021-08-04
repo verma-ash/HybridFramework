@@ -25,7 +25,7 @@ public class PageBase {
 	 * @param prop
 	 * @return
 	 */
-	public static WebDriver initialize(Properties prop) {
+	public static void initialize(Properties prop) {
 		String browserName = prop.getProperty("browser");
 		String testUrl = prop.getProperty("url");
 		long pageTimeout = Long.parseLong(prop.getProperty("pageTimeout"));
@@ -50,7 +50,6 @@ public class PageBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWait));
 		driver.get(testUrl);
 
-		return driver;
 	}
 
 	/**
