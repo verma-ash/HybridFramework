@@ -70,6 +70,7 @@ public class SearchItemOnAmazonTest extends TestBase {
 
 		Assert.assertEquals(0, (int)searchResultOutput.getItemsFromCart());
 		
+		
 	}
 	
 	/**
