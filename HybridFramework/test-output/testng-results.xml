@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33904" started-at="2021-08-03T01:46:11 IST" finished-at="2021-08-03T01:46:45 IST">
+  <suite name="My Demo Suite" duration-ms="24544" started-at="2021-08-04T23:42:59 IST" finished-at="2021-08-04T23:43:24 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33904" started-at="2021-08-03T01:46:11 IST" finished-at="2021-08-03T01:46:45 IST">
+    <test name="Sample Regression Test" duration-ms="24544" started-at="2021-08-04T23:42:59 IST" finished-at="2021-08-04T23:43:24 IST">
       <class name="com.companyName.projectName.TestCases.SearchItemOnAmazonTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="setUp" is-config="true" duration-ms="5403" started-at="2021-08-03T01:46:11 IST" finished-at="2021-08-03T01:46:17 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@3b94d659]" name="setUp" is-config="true" duration-ms="6337" started-at="2021-08-04T23:43:00 IST" finished-at="2021-08-04T23:43:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchItemTest(java.lang.String)[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="searchItemTest" duration-ms="10247" started-at="2021-08-03T01:46:17 IST" data-provider="getProucts" finished-at="2021-08-03T01:46:27 IST">
+        <test-method status="PASS" signature="searchItemTest(java.lang.String)[pri:1, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@3b94d659]" name="searchItemTest" duration-ms="5372" started-at="2021-08-04T23:43:06 IST" data-provider="getProucts" finished-at="2021-08-04T23:43:12 IST">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItemTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="tearDown" is-config="true" duration-ms="1133" started-at="2021-08-03T01:46:27 IST" finished-at="2021-08-03T01:46:28 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@3b94d659]" name="tearDown" is-config="true" duration-ms="776" started-at="2021-08-04T23:43:12 IST" finished-at="2021-08-04T23:43:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="setUp" is-config="true" duration-ms="4255" started-at="2021-08-03T01:46:28 IST" finished-at="2021-08-03T01:46:32 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@3b94d659]" name="setUp" is-config="true" duration-ms="4695" started-at="2021-08-04T23:43:13 IST" finished-at="2021-08-04T23:43:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchItemTest(java.lang.String)[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="searchItemTest" duration-ms="11189" started-at="2021-08-03T01:46:32 IST" data-provider="getProucts" finished-at="2021-08-03T01:46:44 IST">
+        <test-method status="PASS" signature="searchItemTest(java.lang.String)[pri:1, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@3b94d659]" name="searchItemTest" duration-ms="5424" started-at="2021-08-04T23:43:17 IST" data-provider="getProucts" finished-at="2021-08-04T23:43:23 IST">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItemTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@52525845]" name="tearDown" is-config="true" duration-ms="1022" started-at="2021-08-03T01:46:44 IST" finished-at="2021-08-03T01:46:45 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@3b94d659]" name="tearDown" is-config="true" duration-ms="739" started-at="2021-08-04T23:43:23 IST" finished-at="2021-08-04T23:43:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.companyName.projectName.TestCases.SearchItemOnAmazonTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Sample Regression Test -->
+  </suite> <!-- My Demo Suite -->
 </testng-results>
