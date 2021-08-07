@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="My Demo Suite" duration-ms="26078" started-at="2021-08-05T02:46:50 IST" finished-at="2021-08-05T02:47:16 IST">
+  <suite name="My Demo Suite" duration-ms="33758" started-at="2021-08-07T22:48:42 IST" finished-at="2021-08-07T22:49:16 IST">
     <groups>
     </groups>
-    <test name="Sample Regression Test" duration-ms="26078" started-at="2021-08-05T02:46:50 IST" finished-at="2021-08-05T02:47:16 IST">
+    <test name="Sample Regression Test" duration-ms="33758" started-at="2021-08-07T22:48:42 IST" finished-at="2021-08-07T22:49:16 IST">
       <class name="com.companyName.projectName.TestCases.SearchItemOnAmazonTest">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="setUpSuite" is-config="true" duration-ms="382" started-at="2021-08-05T02:46:50 IST" finished-at="2021-08-05T02:46:50 IST">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="setUpSuite" is-config="true" duration-ms="311" started-at="2021-08-07T22:48:42 IST" finished-at="2021-08-07T22:48:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="setUp" is-config="true" duration-ms="7586" started-at="2021-08-05T02:46:51 IST" finished-at="2021-08-05T02:46:58 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="setUp" is-config="true" duration-ms="7330" started-at="2021-08-07T22:48:43 IST" finished-at="2021-08-07T22:48:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchItemTest(java.lang.String)[pri:1, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="searchItemTest" duration-ms="5808" started-at="2021-08-05T02:46:58 IST" data-provider="getProucts" finished-at="2021-08-05T02:47:04 IST">
+        <test-method status="PASS" signature="searchItemTest(java.lang.String)[pri:1, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="searchItemTest" duration-ms="7920" started-at="2021-08-07T22:48:50 IST" data-provider="getProucts" finished-at="2021-08-07T22:48:58 IST">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItemTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="afterMethod" is-config="true" duration-ms="867" started-at="2021-08-05T02:47:04 IST" finished-at="2021-08-05T02:47:05 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="afterMethod" is-config="true" duration-ms="739" started-at="2021-08-07T22:48:58 IST" finished-at="2021-08-07T22:48:59 IST">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="tearDown" is-config="true" duration-ms="772" started-at="2021-08-05T02:47:05 IST" depends-on-methods="com.companyName.projectName.Base.TestBase.afterMethod" finished-at="2021-08-05T02:47:06 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="tearDown" is-config="true" duration-ms="947" started-at="2021-08-07T22:48:59 IST" depends-on-methods="com.companyName.projectName.Base.TestBase.afterMethod" finished-at="2021-08-07T22:49:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="setUp" is-config="true" duration-ms="4464" started-at="2021-08-05T02:47:06 IST" finished-at="2021-08-05T02:47:10 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="setUp" is-config="true" duration-ms="5737" started-at="2021-08-07T22:49:00 IST" finished-at="2021-08-07T22:49:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchItemTest(java.lang.String)[pri:1, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="searchItemTest" duration-ms="4744" started-at="2021-08-05T02:47:10 IST" data-provider="getProucts" finished-at="2021-08-05T02:47:15 IST">
+        <test-method status="PASS" signature="searchItemTest(java.lang.String)[pri:1, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="searchItemTest" duration-ms="9271" started-at="2021-08-07T22:49:05 IST" data-provider="getProucts" finished-at="2021-08-07T22:49:15 IST">
           <params>
             <param index="0">
               <value>
@@ -56,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItemTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="afterMethod" is-config="true" duration-ms="373" started-at="2021-08-05T02:47:15 IST" finished-at="2021-08-05T02:47:15 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="afterMethod" is-config="true" duration-ms="230" started-at="2021-08-07T22:49:15 IST" finished-at="2021-08-07T22:49:15 IST">
           <params>
             <param index="0">
               <value>
@@ -67,7 +67,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="tearDown" is-config="true" duration-ms="751" started-at="2021-08-05T02:47:15 IST" depends-on-methods="com.companyName.projectName.Base.TestBase.afterMethod" finished-at="2021-08-05T02:47:16 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.companyName.projectName.TestCases.SearchItemOnAmazonTest@4b9e255]" name="tearDown" is-config="true" duration-ms="845" started-at="2021-08-07T22:49:15 IST" depends-on-methods="com.companyName.projectName.Base.TestBase.afterMethod" finished-at="2021-08-07T22:49:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

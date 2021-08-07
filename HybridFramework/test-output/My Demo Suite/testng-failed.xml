@@ -5,7 +5,7 @@
     <classes>
       <class name="com.companyName.projectName.TestCases.SearchItemOnAmazonTest">
         <methods>
-          <include name="searchItemTest"/>
+          <include name="searchItemTest" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="setUpSuite"/>

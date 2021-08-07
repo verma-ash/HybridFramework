@@ -82,6 +82,20 @@ public class Utility extends TestBase {
 		return dataObj;
 	}
 
+	public static String captureScreenshotOfFullPage() {
+
+		tempScreenshotCounter += 1;
+		File src = ((TakesScreenshot) PageBase.getDriver()).getScreenshotAs(OutputType.FILE);
+		String screenshotDestication = System.getProperty("user.dir") + "/Screenshots/" + "temp/"
+				+ tempScreenshotCounter + "__" + getCurrentDataTime() + prop.getProperty("screenshotFormat");
+		try {
+			FileUtils.copyFile(src, new File(screenshotDestication));
+		} catch (Exception e) {
+			System.out.println("Unable to take screenshot of " + screenshotDestication + "----" + e.getMessage());
+		}
+		return screenshotDestication;
+	}
+
 	public static String captureScreenshotOfFullPage(String screenshotName) {
 
 		File src = ((TakesScreenshot) PageBase.getDriver()).getScreenshotAs(OutputType.FILE);

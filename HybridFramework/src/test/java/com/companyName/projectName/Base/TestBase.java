@@ -19,6 +19,7 @@ public class TestBase {
 	protected ExtentSparkReporter reporter;
 	protected ExtentReports reports;
 	protected ExtentTest testLogger;
+	protected static int tempScreenshotCounter = 0;
 
 	public TestBase() {
 		String userDir = System.getProperty("user.dir");
@@ -58,6 +59,7 @@ public class TestBase {
 			testLogger.skip("Test skip", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 		}
 
+		tempScreenshotCounter=0;
 		reports.flush();
 	}
 

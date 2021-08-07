@@ -29,9 +29,8 @@ public class AmazonHome extends PageBase {
 	 * 
 	 * @param itemName
 	 */
-	public void searchItem(String itemName) {
+	public void searchItemInput(String itemName) {
 		searchBox.sendKeys(itemName);
-		searchButton.click();
 	}
 	
 	/**

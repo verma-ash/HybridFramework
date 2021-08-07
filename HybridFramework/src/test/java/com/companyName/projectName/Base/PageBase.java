@@ -2,6 +2,7 @@ package com.companyName.projectName.Base;
 
 import java.time.Duration;
 import java.util.Properties;
+import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -57,6 +58,20 @@ public class PageBase {
 	 */
 	public static void quitBrowser() {
 		driver.quit();
+	}
+
+	public static void jumpToNextTab() {
+		Set<String> setOfWindowsOpened = driver.getWindowHandles();
+		System.out.println(setOfWindowsOpened);
+		String currentWindow = driver.getWindowHandle();
+		System.out.println(currentWindow);
+		for (String s : setOfWindowsOpened) {
+			if (!driver.getWindowHandle().equals(s)) {
+				driver.switchTo().window(s);
+				break;
+			}
+		}
+
 	}
 
 }
