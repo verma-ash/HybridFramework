@@ -62,9 +62,6 @@ public class PageBase {
 
 	public static void jumpToNextTab() {
 		Set<String> setOfWindowsOpened = driver.getWindowHandles();
-		System.out.println(setOfWindowsOpened);
-		String currentWindow = driver.getWindowHandle();
-		System.out.println(currentWindow);
 		for (String s : setOfWindowsOpened) {
 			if (!driver.getWindowHandle().equals(s)) {
 				driver.switchTo().window(s);
